@@ -1,0 +1,5 @@
+rootProject.name = 'circuitbreaker-demo'
+
+include('item-service')
+include('name-service')
+include('price-service')
