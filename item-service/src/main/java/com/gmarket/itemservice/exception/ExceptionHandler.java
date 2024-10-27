@@ -14,7 +14,7 @@ public class ExceptionHandler {
   }
 
   @org.springframework.web.bind.annotation.ExceptionHandler(Exception.class)
-  public ResponseEntity<String> handleCircuitBreakerException4(Throwable t) {
+  public ResponseEntity<String> handleCircuitBreakerException2(Throwable t) {
     return ResponseEntity.internalServerError()
         .body( "fallback invoked! exception type : " + t.getClass());
   }

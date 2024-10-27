@@ -13,6 +13,6 @@ public class ItemController {
 
   @GetMapping("/item")
   public Item getItem(String itemNo) {
-    return new Item(itemNo, itemService.getName(), itemService.getPrice());
+    return new Item(itemNo, itemService.getName(itemNo), itemService.getPrice(itemNo));
   }
 }

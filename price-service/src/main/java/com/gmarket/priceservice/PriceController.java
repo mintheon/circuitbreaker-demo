@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PriceController {
 
   @GetMapping("/price")
-  public int getPrice() {
-    return 52300;
+  public int getPrice(String itemNo) {
+    return 10000;
   }
 }

@@ -13,13 +13,13 @@ public class ItemService {
   private final PriceClient priceClient;
 
   @CircuitBreaker(name = "nameClient")
-  public String getName() {
-    return nameClient.getName();
+  public String getName(String itemNo) {
+    return nameClient.getName(itemNo);
   }
 
   @CircuitBreaker(name = "priceClient")
-  public int getPrice() {
-    return priceClient.getPrice();
+  public int getPrice(String itemNo) {
+    return priceClient.getPrice(itemNo);
   }
 
   private String fallbackType(Throwable t) {
